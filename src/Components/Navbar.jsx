@@ -26,26 +26,26 @@ const Navbar = () => {
        </Link>
       </div>
 
-      <div className='w-[50%] flex justify-center items-center'>
-          <input className='w-[80%] px-4 py-2 rounded-l-full border border-gray-300 outline-none' 
+      <div className='w-[50%] flex justify-end lg:justify-center items-center'>
+          <input className='w-[60%] md:w-[70%] lg:w-[80%] px-4 py-1 md:py-2 rounded-l-full border border-gray-300 outline-none' 
           type="text" placeholder='Search'
           onChange={(e)=>setsearchQuery(e.target.value)}
           onKeyUp={searchHandler}
           value={searchQuery}
           />
 
-        <Link className='bg-gray-100 py-2 rounded-r-full px-5 hover:bg-gray-200 cursor-pointer' onClick={()=>searchHandler("searchButton")}>
+        <Link className='bg-gray-100 py-1 md:py-2 rounded-r-full px-2 md:px-5 hover:bg-gray-200 cursor-pointer' onClick={()=>searchHandler("searchButton")}>
         <CiSearch size={'25px'}/>
         </Link>
 
-        <HiMicrophone  size={'42px'} className='px-3 py-2 rounded-full bg-gray-100 hover:bg-gray-200 ml-7 cursor-pointer' />
+        <HiMicrophone  size={'42px'} className='hidden lg:block px-3 py-2 rounded-full bg-gray-100 hover:bg-gray-200 ml-7 cursor-pointer' />
       </div>
 
       <div className='pr-10 flex items-center gap-5'>
       {/* <img src="/react.svg" alt=""  className=' cursor-pointer'/> */}
-      <RiVideoUploadLine className='cursor-pointer' size={'25px'} />
-       <CiBellOn className='cursor-pointer' size={'25px'} />
-      <img src="/11.png" alt="" className='w-10 h-[38px] cursor-pointer rounded-full' />
+      <RiVideoUploadLine className='hidden lg:block cursor-pointer' size={'25px'} />
+       <CiBellOn className='hidden md:block cursor-pointer' size={'25px'} />
+      <img src="/11.png" alt="" className='hidden md:block w-10 h-[38px] cursor-pointer rounded-full' />
       </div>
     </div>
   )

@@ -8,14 +8,14 @@ const SearchVideo = ({video}) => {
   return (
     <div>
          <Link to={`/video/${video?.videoId}`}>
-        <div className='flex justify-start items-center mb-3'>
+        <div className='w-[250px] md:w-[600px] lg:w-[800px] flex flex-col md:flex-row justify-center md:justify-start items-center mb-3'>
           {/* Video thumbnail  */}
-          <div className=' relative h-24 md:h-20 xl:h-24 w-40 min-w-[168px] lg:w-36 lg:min-w-[165px] xl:min-w-[168px]'>
+          <div className=' relative h-24 md:h-28 xl:h-28 w-[250px] md:w-[200px] md:min-w-[200px] lg:w-[260px] lg:min-w-[260px]'>
             <img className='h-full w-full md:rounded-xl md:hover:rounded-none duration-200' src={video?.thumbnails[0]?.url} alt="" />
             {video?.lengthSeconds && <Time time={video?.lengthSeconds} />}
           </div>
           {/* Video Context*/}
-          <div className='flex items-start mt-3 ml-[8px] space-x-3'>
+          <div className='flex items-center md:items-start mt-3 ml-[8px] space-x-3'>
             <div>
               {/* Video title & User name */}
               <span className='text-sm font-bold line-clamp-2'>{video?.title}</span>

@@ -20,7 +20,7 @@ const Search = () => {
     <div className='w-full fixed top-0 z-10 h-18 bg-white'>
         <Navbar/>
         <div className='flex flex-col md:flex-row gap-10'>
-            <Sidelock className='hidden md:block'/>
+            <Sidelock/>
             <div className='grow mt-5 h-[calc(100vh-4.625rem)] overflow-hidden hover:overflow-y-scroll overflow-x-hidden'>
               <div className='grid grid-cols-1 gap-2 p-3 ml-5'>
                 {

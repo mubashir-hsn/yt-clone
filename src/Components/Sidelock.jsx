@@ -3,7 +3,7 @@ import { GoHomeFill } from "react-icons/go";
 import { Link } from 'react-router-dom';
 const Sidelock = () => {
   return (
-    <div className='h-[calc(100vh-4rem)] w-20 text-[10px] text-[#0f0f0f] sticky top-0'>
+    <div className='hidden lg:block h-[calc(100vh-4rem)] w-20 text-[10px] text-[#0f0f0f] sticky top-0'>
 
         <div className='mt-1 flex flex-col items-center justify-center cursor-pointer py-5 hover:bg-blue-gray-50 rounded-md'>
         <Link to='/'>
